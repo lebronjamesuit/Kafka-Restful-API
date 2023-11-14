@@ -18,10 +18,8 @@ public class KafkaProjectsApplication {
     CommandLineRunner commandRunner (KafkaTemplate<String, String> kafkaTemplate){
 
         return args -> {
-            // send topic, data
-            kafkaTemplate.send("food", "rice");
-
-            for (int i = 0; i < 100; i++) {
+            // send  <topic, data>
+            for (int i = 0; i < 5; i++) {
                 kafkaTemplate.send("food", "rice " + i);
             }
 
