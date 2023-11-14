@@ -1,6 +1,12 @@
 # Kafka-Restful-API
 
+# Technologies
+- Apache Kafka Clients 3.3.x
+- Spring Framework 6.0.x
+- Minimum Java version: 17
 
+
+# Iterm
 1 Start the ZooKeeper service
 
     $ bin/zookeeper-server-start.sh config/zookeeper.properties
