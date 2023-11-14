@@ -1,0 +1,49 @@
+
+# Create a topic, consume it by Group 
+
+: [Consumer clientId=consumer-group1-1, groupId=group1] Request joining group due to: need to re-join with the given member-id: consumer-group1-1-551479dc-a02a-484c-8f38-789565e7fa6e
+: [Consumer clientId=consumer-group1-1, groupId=group1] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+: [Consumer clientId=consumer-group1-1, groupId=group1] (Re-)joining group
+: Kafka version: 3.4.1
+: Kafka commitId: 8a516edc2755df89
+: Kafka startTimeMs: 1699950245437
+: [Consumer clientId=consumer-group1-1, groupId=group1] Successfully joined group with generation 
+Generation{generationId=3, memberId='consumer-group1-1-551479dc-a02a-484c-8f38-789565e7fa6e', protocol='range'}
+
+
+: [Consumer clientId=consumer-group1-1, groupId=group1] Finished assignment for group at generation 3: {consumer-group1-1-551479dc-a02a-484c-8f38-789565e7fa6e=Assignment(partitions=[food-0])}
+
+
+: [Producer clientId=producer-1] Resetting the last seen epoch of partition food-0 to 0 since the associated topicId changed from null to FnRgwcwDS5mejJr6iALnew
+
+: [Producer clientId=producer-1] Cluster ID: 6BIK4RnDTGuiSj_YswIOlw
+
+: [Producer clientId=producer-1] ProducerId set to 3 with epoch 0
+
+: [Consumer clientId=consumer-group1-1, groupId=group1] Successfully synced group in generation 
+Generation{generationId=3, memberId='consumer-group1-1-551479dc-a02a-484c-8f38-789565e7fa6e', protocol='range'}
+
+
+: [Consumer clientId=consumer-group1-1, groupId=group1] Notifying assignor about the new Assignment(partitions=[food-0])
+: [Consumer clientId=consumer-group1-1, groupId=group1] Adding newly assigned partitions: food-0
+: [Consumer clientId=consumer-group1-1, groupId=group1] Setting offset for partition food-0 to the 
+committed offset FetchPosition{offset=1000103, offsetEpoch=Optional.empty, 
+currentLeader=LeaderAndEpoch{leader=Optional[nguyens-mbp:9092 (id: 0 rack: null)], epoch=0}}
+
+
+: group1: partitions assigned: [food-0]
+I am listening from @kafka KafkaListenerrice
+I am listening from @kafka KafkaListenerrice 0
+I am listening from @kafka KafkaListenerrice 1
+I am listening from @kafka KafkaListenerrice 2
+I am listening from @kafka KafkaListenerrice 3
+I am listening from @kafka KafkaListenerrice 4
+I am listening from @kafka KafkaListenerrice 5
+I am listening from @kafka KafkaListenerrice 6
+I am listening from @kafka KafkaListenerrice 7
+I am listening from @kafka KafkaListenerrice 8
+I am listening from @kafka KafkaListenerrice 9
+I am listening from @kafka KafkaListenerrice 10
+I am listening from @kafka KafkaListenerrice 11
+I am listening from @kafka KafkaListenerrice 12
+I am listening from @kafka KafkaListenerrice 13

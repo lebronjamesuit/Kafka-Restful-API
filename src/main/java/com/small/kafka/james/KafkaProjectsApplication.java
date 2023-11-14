@@ -21,8 +21,8 @@ public class KafkaProjectsApplication {
             // send topic, data
             kafkaTemplate.send("food", "rice");
 
-            for (int i = 0; i < 1000000; i++) {
-                kafkaTemplate.send("food", "rice" + i);
+            for (int i = 0; i < 100; i++) {
+                kafkaTemplate.send("food", "rice " + i);
             }
 
         };
