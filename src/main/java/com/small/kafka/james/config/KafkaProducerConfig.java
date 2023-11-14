@@ -12,6 +12,10 @@ import org.springframework.kafka.core.ProducerFactory;
 import java.util.HashMap;
 import java.util.Map;
 
+
+/*
+Java Configuration (No Spring Boot)
+ */
 @Configuration
 public class KafkaProducerConfig {
 

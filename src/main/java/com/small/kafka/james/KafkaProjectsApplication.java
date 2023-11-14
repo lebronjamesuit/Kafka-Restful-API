@@ -19,8 +19,8 @@ public class KafkaProjectsApplication {
 
         return args -> {
             // send  <topic, data>
-            for (int i = 0; i < 5; i++) {
-                kafkaTemplate.send("food", "rice " + i);
+            for (int i = 0; i < 20; i++) {
+                kafkaTemplate.send("food", "sweet potato  " + i);
             }
 
         };
