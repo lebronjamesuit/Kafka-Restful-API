@@ -1,0 +1,15 @@
+# Start the ZooKeeper service
+$ bin/zookeeper-server-start.sh config/zookeeper.properties
+
+
+# Start the Kafka broker service
+$ bin/kafka-server-start.sh config/server.properties
+
+
+# Producer
+Spring Boot Kafka: topic, kafka template config
+
+
+#Consumer
+
+ bin/kafka-console-consumer.sh --topic food --from-beginning --bootstrap-server localhost:9092
